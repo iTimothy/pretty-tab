@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pretty-tab</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="toolbar">
+		<p class="input_w">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search_icon"> <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path> </svg>
+			<input type="text" class="search_in" id="searchInput" placeholder="输入...">
+		</p>
+		<p class="search_btns" id="searchBtns">
+			<button data-url="https://www.google.com.hk/search?q=">Google</button>
+			<button data-url="https://www.baidu.com/s?wd=">百度</button>
+			<button data-url="http://www.bing.com/search?q=">Bing</button>
+			<button data-url="http://duckduckgo.com/?q=">Duck</button>
+		</p>
+	</div>
+	<ul class="search_list" id="searchList"></ul>
+	<div class="wrapper scroll">
+		<div class="row scroll">
+			<ul class="website_list" id="websiteList">
+			</ul>
+			<p class="add_btn" id="addWebsiteBtn"><span>add website</span></p>
+		</div>
+		<div class="row scroll frame">
+			<div class="frame_wrap" id="frameList">
+			</div>
+			<p class="add_btn" id="addFrameBtn"><span>add website frame</span></p>
+		</div>
+	</div>
+	<div class="menu" id="menu">
+		<span class="delete" id="closeMenu"></span>
+		<h1 class="menu_h1">Menu</h1>
+		<ul class="menu_list" id="menuList">
+			<li data-action="topSites">常去网站</li>
+			<li data-action="history">历史记录</li>
+			<li data-action="app">已装应用</li>
+		</ul>
+	</div>
+	<div class="scroll menu_content" id="menuContent">
+		<ul class="data_list menu_detail_item" id="historyList"></ul>
+		<ul class="data_list menu_detail_item" id="topSitesList"></ul>
+		<ul class="data_list menu_detail_item app_list" id="appList">
+		</ul>
+
+	</div>
+	<div class="menu_btn" id="menuBtn"></div>
+	
+
+<script src="js/index.js"></script>
+</body>
+</html>

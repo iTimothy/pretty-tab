@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "pretty-tab",
+  "description": "pretty new tab",
+  "version": "1.0",
+  "author":"YingWu Zhang",
+  "permissions": [
+    "storage",
+    "history",
+    "topSites",
+    "management",
+    "http://*.baidu.com/",
+    "https://*.baidu.com/"
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "browser_action": {
+    "default_icon": "./asset/tab.png"
+  },
+  "icons": { 
+    "128": "./asset/tab.png" 
+  }
+}
