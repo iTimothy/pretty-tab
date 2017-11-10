@@ -197,8 +197,8 @@ var store = {
 };
 var globalStore = {
     activeIndex: -1,
-    GOOGLEKEY: '',
-    GOOGLECX: ''
+    GOOGLEKEY: 'AIzaSyBmP5d8cdLy8h57J4UZ4dhoTJ6dQW9wFbA',
+    GOOGLECX: '005241945962570121590:4mjv7mmifku'
 }
 var engine = ['https://www.google.com.hk/search?q=', 'https://www.baidu.com/s?wd=', 'http://www.bing.com/search?q=', 'http://duckduckgo.com/?q=']
 
@@ -250,6 +250,7 @@ searchBtns.on('click', e => {
         location.replace(`${target.getAttribute('data-url')}${searchInput.value}`);
     }
 }, !1)
+
 searchInput.on('keydown', e => {
     let childs = searchList.childNodes
     if (e.keyCode == 13) {
@@ -405,6 +406,9 @@ searchInput.on('input', function() {
 searchInput.on('focus', function() {
     this.dispatchEvent(event)
 })
+searchInput.on('dblclick',function(){
+    location.replace(`${engine[~~store.engineIndex]}${searchInput.value}`);
+},!1)
 
 let addAEditWebsite = (target, dataObj, arrIndex, cb) => {
 

@@ -21,6 +21,7 @@ body {
 	font-size: 14px;
 	background: #f7f7f7;
 	background-size: cover;
+	background-image: url(../asset/5.jpg);
 }
 
 .scroll::-webkit-scrollbar-track {
@@ -296,7 +297,9 @@ iframe {
 	cursor: pointer;
 	transition: all .2s .15s;
 }
-
+.modal .delete{
+	background-image: url(../asset/add.png) !important;
+}
 .edit {
 	position: absolute;
 	bottom: 0;
@@ -788,4 +791,66 @@ iframe {
 		right: 14px;
 	}
 
+}
+.grey .website_list li{
+	background-color: rgba(0,0,0,.1);
+}
+.grey .website_list a{
+	border-bottom: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+}
+.grey .website_list a:hover{
+	background: rgba(0,0,0,.3);
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	box-shadow:none;
+}
+.grey .add_btn:hover{
+	background-color: rgba(0,0,0,.3);
+	color: #fff;
+}
+.grey .toolbar{
+	background-color: rgba(255,255,255,0);
+}
+.grey .search_in{
+	border-color:rgba(255,255,255,0);
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+}
+.grey .search_icon{
+	fill:#fff;
+}
+.grey .engine{
+	color: #fff;
+	border-color:rgba(255,255,255,0);
+	background-color: rgba(255,255,255,0);
+}
+.grey .engine option{
+	color: #000;
+}
+.grey .delete {
+	background-image: url(../asset/add_white.png);
+}
+.grey .frame_wrap .delete{
+	background-color: #323d6a;
+}
+
+.grey .edit {
+	background-image: url(../asset/edit_white.png);
+}
+.grey .menu,.grey .menu_content{
+	color: #fff;
+	background: rgba(0,0,0,.1);
+}
+.grey .menu_h1{
+	color: #cecece;
+}
+.grey .menu_list li,.grey .app_list li{
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	color: #fff;
+}
+.grey .data_list a{
+	color: #fff;
+}
+.grey .data_list a:hover,.grey .app_list li:hover{
+	background-color: rgba(0,0,0,.2);
 }
