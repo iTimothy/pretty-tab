@@ -229,7 +229,7 @@ let searchList = $('#searchList')
 chrome.storage.sync.get('tabStore', function(data) {
     if (data.tabStore) {
         merge(store, data.tabStore || {})
-        websiteList.innerHTML = createWebItem(store.websites)
+        websiteList.innerHTML = createWebItem(store.websites.reverse());
         if (store.frames) {
             frameList.innerHTML = createFrameItem(store.frames)
         }
