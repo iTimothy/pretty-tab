@@ -854,3 +854,17 @@ iframe {
 .grey .data_list a:hover,.grey .app_list li:hover{
 	background-color: rgba(0,0,0,.2);
 }
+.style_1 .wrapper{
+	min-width: 780px;
+	max-width: 74%;
+    margin: 46px auto 20px;
+}
+.style_1 .website_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.style_1 .website_list li {
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 25%;
+}
